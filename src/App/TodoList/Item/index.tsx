@@ -14,7 +14,7 @@ interface State {
   onEdit: boolean
 }
 
-const Item: React.FC<Props> = ({ todo }) => {
+const Item = ({ todo }: Props) => {
   const [appState, setAppState] = useRecoilState<AppState>(recoilState)
   const editInput = createRef<HTMLInputElement>()
   const init: State = { onEdit: false }

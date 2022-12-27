@@ -7,7 +7,7 @@ import { recoilState } from '../../dataStructure'
 import FilterLink from './FilterLink'
 import { Layout } from './style'
 
-const UnderBar: React.FC = () => {
+const UnderBar = () => {
   const [appState, setAppState] = useRecoilState<AppState>(recoilState)
   const completed: number = appState.todoList.filter(t => t.completed === true).length /* eslint-disable-line prettier/prettier */
   const backlog: number = appState.todoList.filter(t => t.completed === false).length /* eslint-disable-line prettier/prettier */

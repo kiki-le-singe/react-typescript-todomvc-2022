@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
-const FilterLink: React.FC = () => {
+const FilterLink = () => {
   const { pathname } = useLocation()
   return (
     <ul className="filters">

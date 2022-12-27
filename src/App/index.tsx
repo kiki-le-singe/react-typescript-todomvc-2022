@@ -6,7 +6,7 @@ import { NotFound } from '../NotFound'
 
 import TodoMVC from './TodoMVC'
 
-const App: React.FC = () => (
+const App = () => (
   <ErrorBoundary>
     <BrowserRouter>
       <RecoilRoot>

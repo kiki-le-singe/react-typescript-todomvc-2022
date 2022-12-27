@@ -9,7 +9,7 @@ import { recoilState } from '../../dataStructure'
 import Item from './Item'
 import { Layout } from './style'
 
-const TodoList: React.FC = () => {
+const TodoList = () => {
   const { pathname } = useLocation()
   const [appState, setAppState] = useRecoilState<AppState>(recoilState)
 

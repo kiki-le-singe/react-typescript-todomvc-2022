@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 
-const Copyright: React.FC = memo(
+const Copyright = memo(
   () => (
     <footer className="info">
       <p>

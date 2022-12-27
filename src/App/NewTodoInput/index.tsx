@@ -7,7 +7,7 @@ import { UUID } from '../../functions'
 
 import { Layout } from './style'
 
-const NewTodoTextInput: React.FC = () => {
+const NewTodoTextInput = () => {
   const [appState, setAppState] = useRecoilState<AppState>(recoilState)
   const textInput: React.RefObject<HTMLInputElement> =
     createRef<HTMLInputElement>()

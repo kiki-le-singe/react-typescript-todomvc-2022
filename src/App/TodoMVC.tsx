@@ -10,7 +10,7 @@ import { Layout } from './style'
 import TodoList from './TodoList'
 import UnderBar from './UnderBar'
 
-const TodoMVC: React.FC = () => {
+const TodoMVC = () => {
   const appState = useRecoilValue<AppState>(recoilState)
 
   // if appState has changes, save it LocalStorage.
